@@ -1,12 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch,Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
+import Homepage from './views/Home/Homepage';
+
+const loading = () => <div>Loading</div>
 
 function App() {
   return (
-    <div className="App">
-      a
-    </div>
+   <Router>
+     <React.Suspense fallback={loading()}>
+       <Switch>
+         <Route exact path="/" render={props => <Homepage/>}/>
+       </Switch>
+     </React.Suspense>
+   </Router>
   );
 }
 
