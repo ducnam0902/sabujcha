@@ -1209,6 +1209,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@icon/themify-icons@^1.0.1-alpha.3":
+  version "1.0.1-alpha.3"
+  resolved "https://registry.yarnpkg.com/@icon/themify-icons/-/themify-icons-1.0.1-alpha.3.tgz#adb1652d37d4e58f507b1634785a3779f6829e0b"
+  integrity sha512-KDE5pjBgnEVugPhcQxBmhMMT+5n2YU/A6yHHeDHSGL68gHaLp27a5WxV4LVakN0kiiA3MVdSkUPdX6n/UWS7zw==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -5272,6 +5277,11 @@ follow-redirects@^1.0.0:
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.2.tgz#dd73c8effc12728ba5cf4259d760ea5fb83e3147"
   integrity sha512-6mPTgLxYm3r6Bkkg0vNM0HTjfGrOEtsfbhagQvbxDEsEkpNhw582upBaoRZylzen6krEmxXJgt9Ju6HiI4O7BA==
+
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
+  integrity sha1-j6jPBBGhoxr9B7BtKQK7n8gVoTM=
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -11156,6 +11166,11 @@ text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+themify-icons@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/themify-icons/-/themify-icons-1.0.0.tgz#216f330ed1b9c3fdc8e675655e189a0b7ecb1c5c"
+  integrity sha1-IW8zDtG5w/3I5nVlXhiaC37LHFw=
 
 throat@^5.0.0:
   version "5.0.0"
