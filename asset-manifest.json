@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/sabujcha/static/css/main.ea1455b2.chunk.css",
-    "main.js": "/sabujcha/static/js/main.1a4248f2.chunk.js",
-    "main.js.map": "/sabujcha/static/js/main.1a4248f2.chunk.js.map",
-    "runtime-main.js": "/sabujcha/static/js/runtime-main.4e18db0b.js",
-    "runtime-main.js.map": "/sabujcha/static/js/runtime-main.4e18db0b.js.map",
-    "static/js/2.b0ed9c55.chunk.js": "/sabujcha/static/js/2.b0ed9c55.chunk.js",
-    "static/js/2.b0ed9c55.chunk.js.map": "/sabujcha/static/js/2.b0ed9c55.chunk.js.map",
-    "static/js/3.b3f38cc0.chunk.js": "/sabujcha/static/js/3.b3f38cc0.chunk.js",
-    "static/js/3.b3f38cc0.chunk.js.map": "/sabujcha/static/js/3.b3f38cc0.chunk.js.map",
+    "main.css": "/sabujcha/static/css/main.749b34f9.chunk.css",
+    "main.js": "/sabujcha/static/js/main.50f237db.chunk.js",
+    "main.js.map": "/sabujcha/static/js/main.50f237db.chunk.js.map",
+    "runtime-main.js": "/sabujcha/static/js/runtime-main.6212817b.js",
+    "runtime-main.js.map": "/sabujcha/static/js/runtime-main.6212817b.js.map",
+    "static/css/2.ce7eed00.chunk.css": "/sabujcha/static/css/2.ce7eed00.chunk.css",
+    "static/js/2.a59c9477.chunk.js": "/sabujcha/static/js/2.a59c9477.chunk.js",
+    "static/js/2.a59c9477.chunk.js.map": "/sabujcha/static/js/2.a59c9477.chunk.js.map",
+    "static/js/3.f9a72229.chunk.js": "/sabujcha/static/js/3.f9a72229.chunk.js",
+    "static/js/3.f9a72229.chunk.js.map": "/sabujcha/static/js/3.f9a72229.chunk.js.map",
     "index.html": "/sabujcha/index.html",
-    "static/css/main.ea1455b2.chunk.css.map": "/sabujcha/static/css/main.ea1455b2.chunk.css.map",
-    "static/js/2.b0ed9c55.chunk.js.LICENSE.txt": "/sabujcha/static/js/2.b0ed9c55.chunk.js.LICENSE.txt"
+    "static/css/2.ce7eed00.chunk.css.map": "/sabujcha/static/css/2.ce7eed00.chunk.css.map",
+    "static/css/main.749b34f9.chunk.css.map": "/sabujcha/static/css/main.749b34f9.chunk.css.map",
+    "static/js/2.a59c9477.chunk.js.LICENSE.txt": "/sabujcha/static/js/2.a59c9477.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/sabujcha/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e18db0b.js",
-    "static/js/2.b0ed9c55.chunk.js",
-    "static/css/main.ea1455b2.chunk.css",
-    "static/js/main.1a4248f2.chunk.js"
+    "static/js/runtime-main.6212817b.js",
+    "static/css/2.ce7eed00.chunk.css",
+    "static/js/2.a59c9477.chunk.js",
+    "static/css/main.749b34f9.chunk.css",
+    "static/js/main.50f237db.chunk.js"
   ]
 }
