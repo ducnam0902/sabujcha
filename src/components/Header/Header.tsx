@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import '../Header/Header.scss'
+import ListItem from './components/ListItem'
+import {shop} from '../../constants/shop'
+import List from './components/List'
 
 const Header = () => {
     return (
@@ -24,6 +27,11 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <Link to="/"><span>Shop</span> <i className="fa fa-chevron-down" aria-hidden="true"></i> </Link>
+                                    <div className="subNav">
+                                       {
+                                           shop.map((items, key) => <List key={key} title={items.title} data={items.data}/>)
+                                       }
+                                    </div>
                                 </li>
                                 <li>
                                     <Link to="/"><span>Product</span> <i className="fa fa-chevron-down" aria-hidden="true"></i></Link>
