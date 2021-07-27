@@ -14,8 +14,8 @@ const renderList = (list: any) => {
 const List: FC<ListProps> = ({ title, data }) => {
     return (
         <div className="column">
-            <p className="title">{title}</p>
-            <ul>
+            <h3 className="title">{title}</h3>
+            <ul className="list">
                 {renderList(data)}
             </ul>
         </div>

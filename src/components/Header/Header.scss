@@ -19,25 +19,30 @@ header .nav{
     padding: 0;
     margin: 0;
     height: 105px;
+
     line-height: 105px;
+
     display: flex;
     justify-content: flex-end;
 }
-header .nav ul {
+header .nav .navlist {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
 }
-header .nav li{
+header .nav .navlist .nav-item{
     padding-right: 45px;
+
     height: 105px;
     line-height: 105px;
+
+    position: relative;
 }
-header .nav li:last-child{
+header .nav .navlist .nav-item:last-child{
     padding-right: 0;
 }
-header .nav ul li a{
+header .nav .navlist .nav-item a{
 
     text-decoration: none;
     color: #1b1b1b;
@@ -47,14 +52,14 @@ header .nav ul li a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
 }
-header .nav li a i{
+header .nav .navlist .nav-item a i{
     font-size: 10px;
     color: #1b1b1b;
     font-weight: 100;
-    margin-left: 2px;
-
-    
+    margin-left: 2px; 
 }
+
+
 header .nav .subMenu{
     display: flex;
     height: 105px;
@@ -115,19 +120,24 @@ header .nav .subMenu .cart i{
     width: 20px;
     cursor: pointer;
 }
-header .nav ul li:hover span{
+header .nav .navlist .nav-item:hover span{
     color: #519f10;
 }
 
 // CSS for list component
 header .nav .subNav {
     position: absolute;
-    bottom: 9%;
-    left: 24%;
+    top: 100%;
+    left: 0%;
+    transform: translateX(-39%);
+    box-sizing: border-box;
+    
     width: 900px;
     height: 207px;
     padding: 33px 30px 30px 0;
     box-shadow: 1px 2px 5px 0 #0000001a;
+
+    display: flex;
 }
 header .nav .subNav .column{
     padding-left: 60px;
@@ -138,14 +148,33 @@ header .nav .subNav .column .title{
     line-height: 14px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-header .nav ul li .subNav .column>ul{
-    margin-top: 6px;
+header .nav .navlist .nav-item .subNav .column > .list{
     width: 157px;
     height: 120px;
-    display: flex;
-    flex-direction: column;
+    
+    margin-top: 4px;
+    padding-left: 0;
+
+    list-style-type: none;
 }
-header .nav .subNav .column .list .list__item{
-   height: 30px;
+header .nav .navlist .nav-item .subNav .column .list .list__item{
+    width: 157px;
+    height: 30px;
+
+
+}
+header .nav .navlist .nav-item .subNav .column .list .list__item a{
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-style: normal;
+
+    display: block;
 }

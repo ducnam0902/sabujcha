@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import '../Header/Header.scss'
-import ListItem from './components/ListItem'
 import {shop} from '../../constants/shop'
 import List from './components/List'
 
@@ -18,28 +17,28 @@ const Header = () => {
                     </div>
                     <div className="col-sm-6 col-lg-9">
                         <div className="nav">
-                            <ul>
-                                <li>
+                            <ul className="navlist">
+                                <li className="nav-item" >
                                     <Link to="/"><span>Home</span></Link>
                                 </li>
-                                <li>
+                                <li className="nav-item" >
                                     <Link to="/"><span>About</span></Link>
                                 </li>
-                                <li>
+                                <li className="nav-item" >
                                     <Link to="/"><span>Shop</span> <i className="fa fa-chevron-down" aria-hidden="true"></i> </Link>
                                     <div className="subNav">
                                        {
                                            shop.map((items, key) => <List key={key} title={items.title} data={items.data}/>)
                                        }
                                     </div>
-                                </li>
-                                <li>
+                                </li >
+                                <li className="nav-item" >
                                     <Link to="/"><span>Product</span> <i className="fa fa-chevron-down" aria-hidden="true"></i></Link>
                                 </li>
-                                <li>
+                                <li className="nav-item" >
                                     <Link to="/"><span>Blog</span> <i className="fa fa-chevron-down" aria-hidden="true"></i></Link>
                                 </li>
-                                <li>
+                                <li className="nav-item" >
                                     <Link to="/"><span>Contact</span></Link>
                                 </li>
                             </ul>
