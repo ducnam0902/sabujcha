@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import '../Header/Header.scss'
 import {shop} from '../../constants/shop'
+import { product } from '../../constants/product'
+import { blog } from '../../constants/blog'
 import List from './components/List'
 
 const Header = () => {
@@ -26,14 +28,15 @@ const Header = () => {
                                 </li>
                                 <li className="nav-item" >
                                     <Link to="/"><span>Shop</span> <i className="fa fa-chevron-down" aria-hidden="true"></i> </Link>
-                                    <div className="subNav">
-                                       {
-                                           shop.map((items, key) => <List key={key} title={items.title} data={items.data}/>)
-                                       }
-                                    </div>
+                                    {/* <div className="subNav" style={{width:900, height: 207 }}>
+                                       {shop.map((items, key) => <List key={key} title={items.title} data={items.data}/>)}
+                                    </div> */}
                                 </li >
                                 <li className="nav-item" >
                                     <Link to="/"><span>Product</span> <i className="fa fa-chevron-down" aria-hidden="true"></i></Link>
+                                    <div className="subNav" style={{width:190, height: 192 }}>
+                                       {product.map((items, key) => <List key={key} data={items.data}/>)}
+                                    </div>
                                 </li>
                                 <li className="nav-item" >
                                     <Link to="/"><span>Blog</span> <i className="fa fa-chevron-down" aria-hidden="true"></i></Link>

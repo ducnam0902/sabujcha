@@ -131,9 +131,7 @@ header .nav .subNav {
     left: 0%;
     transform: translateX(-39%);
     box-sizing: border-box;
-    
-    width: 900px;
-    height: 207px;
+
     padding: 33px 30px 30px 0;
     box-shadow: 1px 2px 5px 0 #0000001a;
 
@@ -164,7 +162,6 @@ header .nav .navlist .nav-item .subNav .column .list .list__item{
     width: 157px;
     height: 30px;
 
-
 }
 header .nav .navlist .nav-item .subNav .column .list .list__item a{
     color: #000;
@@ -177,4 +174,21 @@ header .nav .navlist .nav-item .subNav .column .list .list__item a{
     font-style: normal;
 
     display: block;
+    transition: 0.7s;
+}
+header .nav .navlist .nav-item .subNav .column .list .list__item:hover a{
+    color: #519f10;
+    transition: 0.7s;
+    transform: translateX(5px);
+}
+header .nav .navlist .nav-item .subNav .column .list .list__item:hover a::before{
+    display: inline-block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #519f10;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    margin-left: 0;
+       
 }

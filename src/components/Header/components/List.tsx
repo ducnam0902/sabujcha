@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import ListItem from './ListItem'
+import { Link } from 'react-router-dom'
 type ListProps = {
     title?: string,
     data?: Array<any>
@@ -7,7 +7,7 @@ type ListProps = {
 const renderList = (list: any) => {
     return list.map((items: any, key: number) => (
         <li key={key} className="list__item">
-            <ListItem title={items.title} link={items.key} />
+            <Link to={items.link}>{items.title}</Link>
         </li>
     ))
 }
