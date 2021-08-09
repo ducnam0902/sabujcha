@@ -1,10 +1,14 @@
 import React from 'react'
-import Header from '../../components/Header/Header'
+import Slide from '../../components/Slide/Slide'
+import DefaultLayout from '../../layouts/DefaultLayout'
+
 
 const Homepage = () => {
     return (
         <div>
-           <Header/>
+           <DefaultLayout>
+            <Slide/>
+           </DefaultLayout>
         </div>
     )
 }
