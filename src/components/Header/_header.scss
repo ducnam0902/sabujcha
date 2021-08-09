@@ -1,0 +1,100 @@
+@import "../../scss/variables";
+header {
+    max-height: 105px;
+    background-color: $primary-color;
+    .header-logo {
+        display: inline-block;
+        line-height: 105px;
+    }
+
+    .header-nav {
+        display: flex;
+        line-height: 105px;
+        justify-content: flex-end;
+
+        .main-nav {
+            display: flex;
+            position: relative;
+            .main-nav_item {
+                display: flex;
+                margin-right: 45px;
+
+                .main-nav_item--link {
+                    text-transform: uppercase;
+                    font-family: $font-montserrat;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: $text-color;
+                    font-style: initial;
+                    line-height: 105px;
+                }
+                i {
+                    margin-left: 5px;
+                    font-size: 9px;
+                    font-weight: lighter;
+                    line-height: 105px;
+                }
+                &:hover .main-nav_item--link {
+                    color: $secondary-color;
+                }
+            }
+            .main-nav_item:last-child {
+                margin-right: 0;
+            }
+        }
+        .header-currency {
+            height: 105px;
+            cursor: pointer;
+            padding-left: 62px;
+            padding-right: 10px;
+            display: flex;
+            position: relative;
+            span {
+                font-family: $font-montserrat;
+                font-size: 12px;
+                font-weight: 600;
+                color: $text-color;
+            }
+            i {
+                font-size: 10px;
+                display: inline-block;
+                margin-left: 8px;
+                font-weight: lighter;
+                line-height: 105px;
+            }
+            &::before {
+                display: block;
+                content: "";
+                width: 1px;
+                height: 16px;
+                border-left: 1px solid $text-color;
+                position: absolute;
+                top: 44%;
+                left: 25%;
+            }
+        }
+        .header-cart {
+            margin-left: 20px;
+            height: 105px;
+            position: relative;
+            cursor: pointer;
+            span {
+                position: absolute;
+                bottom: 16%;
+                text-align: center;
+                font-size: 13px;
+                width: 18px;
+                color: $secondary-color;
+            }
+            i {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    header .header-nav .main-nav .sub-nav .column{
+        padding-left: 10px;
+    }
+}

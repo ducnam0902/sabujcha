@@ -1,0 +1,23 @@
+@import 'variables';
+*{
+    border: none;
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none !important;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: $font-lora;
+}
+ul li{
+    list-style: none;
+}
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
