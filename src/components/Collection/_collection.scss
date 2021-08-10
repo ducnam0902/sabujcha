@@ -1,33 +1,37 @@
-.collection-item{
+.collection{
     max-width: 100%;
     padding-top: 80px;
-    padding-bottom: 90px;
-
-    .collection-item_image{
-        max-width: 100%;
-        padding-top: 70%;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-    }
-    .collection-item_label{
-        box-sizing: content-box;
-        position: absolute;
-        top: 10%;
-        right: 0;
-        background-color: $secondary-color;
-        padding: 8px 35px;
-        font-family: $font-lora;
-        font-weight: 400;
-        color: #fff;
-        font-size: 14px;
-        line-height: 24px;
-    }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
+    padding-bottom: 80px;
     .collection-item{
+        max-width: 100%;
+        margin-bottom: 20px;
+    
+        .collection-item_image{
+            max-width: 100%;
+            padding-top: 70%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
         .collection-item_label{
-            top: 8%
+            box-sizing: content-box;
+            position: absolute;
+            top: 10%;
+            right: 0;
+            background-color: $secondary-color;
+            padding: 8px 35px;
+            font-family: $font-lora;
+            font-weight: 400;
+            color: #fff;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .collection-item{
+            .collection-item_label{
+                top: 8%
+            }
         }
     }
 }

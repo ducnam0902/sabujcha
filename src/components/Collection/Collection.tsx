@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import { Link } from 'react-router-dom'
-import collectionItems from '../../assets/images/razdel.jpg'
+import { collectionItem } from '../../constants/images'
+import CollectionList from './components/CollectionList'
 
 type CollectionProps = {
 
@@ -8,16 +8,9 @@ type CollectionProps = {
 const Collection: FC<CollectionProps> = () => {
     return (
         <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-4">
-                    <div className="collection-item">
-                        <Link to="/" className="collection-item_link">
-                            <div className="collection-item_image" style={{ backgroundImage: `url(${collectionItems})` }}>
-                                <div className="collection-item_label">Black Tea</div>
-                            </div>
-
-                        </Link>
-                    </div>
+            <div className="collection">
+                <div className="row">
+                    {collectionItem.map((value, key) => (<CollectionList key={key} title={value.title} image={value.image} />))}
                 </div>
             </div>
         </div>

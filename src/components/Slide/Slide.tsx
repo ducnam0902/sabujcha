@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import bg1 from '../../assets/images/s42.jpg';
-import bg2 from '../../assets/images/s43.jpg';
-const slides = [bg1, bg2];
+import { slides } from '../../constants/images';
 const Slide = () => {
     const [slideSeleted, setSlideSeleted] = useState(slides[0]);
 

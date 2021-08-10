@@ -1,0 +1,53 @@
+.slogan{
+    max-width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    .slogan-image{
+        max-width: 100%;
+        object-fit: center;
+    }
+    .slogan-title{
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 30px;
+        max-width: 60%;
+        color: #4b4747;
+        font-style: italic;
+        margin: 20px auto 35px;
+        font-family: $font-lora;
+    }
+    .slogan-author{
+        color: #505050;
+        font-size: 12px;
+        margin:0;
+        font-family: $font-montserrat;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .slogan-author-job{
+        color: #8f8f8f;
+        font-size: 12px;
+        margin:0;
+        font-family: $font-montserrat;
+        font-weight: 500;
+        margin-top: 10px;
+        font-style: normal;
+    }
+}
+@media screen and(min-width: 768px) and (max-width: 991px) {
+    .slogan{
+        .slogan-title{
+            max-width: 80%;
+        }
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .slogan{
+        padding: 80px 0;
+        .slogan-title{
+            max-width: 100%;
+            font-size: 20px;
+        }
+    }
+}
