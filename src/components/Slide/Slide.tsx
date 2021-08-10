@@ -22,7 +22,7 @@ const Slide = () => {
                         {values === slideSeleted && <div className="slide-image" style={{ backgroundImage: `url(${slideSeleted})` }} >
                             <div className="slide-content">
                                 <div className="container">
-                                    <p className='slide-main-title-green'>{slideSeleted === values ? `Hello it's tea time` : `Want to stay healthy`} </p>
+                                    <p className='slide-main-title-green'>{slideSeleted === slides[0] ? `Hello it's tea time` : `Want to stay healthy`} </p>
                                     <p className="slide-main-title">drink matcha.</p>
                                     <p className="slide_sub-title">Lorem ipsum dolor sit amet, consectetu adipisicing elit sedeiu tempor inci ut labore et dolore magna aliqua.</p>
                                     <div className="slide-button"><Link className="slide-button_link" to="/">Shop Now</Link></div>
