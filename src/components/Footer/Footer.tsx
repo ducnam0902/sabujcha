@@ -73,7 +73,10 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className="col-md-6 col-sm-12">
-                            <img className="footer-bottom_payment" src={payment} alt="payment" />
+                            <div className="footer-bottom_payment">
+                            <Link className="footer-bottom_link" to="/"><img className="footer-bottom_payment_image" src={payment} alt="payment" /></Link>
+                            </div>
+
                         </div>
                     </div>
                 </div>
