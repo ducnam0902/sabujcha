@@ -1,0 +1,84 @@
+.footer {
+    max-width: 100%;
+    .footer-top {
+        background-color: #f8f8f8;
+        padding: 73px 0 36px;
+        .footer-item {
+            max-width: 100%;
+            .footer-item_title {
+                font-family: $font-playfair;
+                font-size: 20px;
+                font-weight: 400;
+                color: #000;
+                margin-bottom: 25px;
+            }
+            .footer-list {
+                max-width: 100%;
+                padding-left: 0;
+                .footer-list_item {
+                    padding-bottom: 15px;
+                    color: #242424;
+                    font-size: 14px;
+                    font-family: $font-lora;
+                    font-weight: 400;
+                    font-style: normal;
+
+                    &:hover {
+                        color: $secondary-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .footer-item_info {
+                font-family: $font-lora;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: #242424;
+                margin-bottom: 0;
+            }
+            .footer-item-group {
+                margin-top: 20px;
+                .footer-item-link {
+                    display: inline-block;
+                    font-size: 15px;
+                    background-color: #333;
+                    color: #fff;
+                    margin-right: 10px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    border-radius: 50%;
+                    transition: 0.5s;
+                    &:hover{
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        .footer-bottom_copyright {
+            .footer-bottom_link {
+                text-align: left;
+            }
+        }
+        .footer-bottom_payment {
+           display: block;
+        }
+    }
+}
+@media screen and(max-width: 767px) {
+    .footer{
+        .footer-top{
+            .footer-item {
+                .footer-item_title{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

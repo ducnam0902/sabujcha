@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import payment from '../../assets/images/payment.png'
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="container">
-                <div className="footer-fop">
+            <div className="footer-top">
+                <div className="container">
+
                     <div className="row">
                         <div className="col-12 col-sm-6 col-lg-3">
                             <div className="footer-item">
@@ -52,17 +53,19 @@ const Footer = () => {
                                 <p className="footer-item_title">Find us</p>
                                 <p className="footer-item_info">Your Description goes to here you can find us here</p>
                                 <div className="footer-item-group">
-                                    <i className="fa fa-twitter footer-item-icon"></i>
-                                    <i className="fa fa-instagram footer-item_icon"></i>
-                                    <i className="fa fa-fa-google footer-item_icon"></i>
-                                    <i className="fa fa-linkedin footer-item_icon"></i>
-                                    <i className="fa fa-pinterest footer-item_icon"></i>
+                                    <Link to="/" className="footer-item-link"><i className="fa fa-twitter footer-item_icon"></i></Link>
+                                    <Link to="/" className="footer-item-link"><i className="fa fa-instagram footer-item_icon"></i></Link>
+                                    <Link to="/" className="footer-item-link"><i className="fa fa-google footer-item_icon"></i></Link>
+                                    <Link to="/" className="footer-item-link"><i className="fa fa-linkedin footer-item_icon"></i></Link>
+                                    <Link to="/" className="footer-item-link"><i className="fa fa-pinterest footer-item_icon"></i></Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="footer-bottom">
+            </div>
+            <div className="footer-bottom">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-sm-12">
                             <p className="footer-bottom_copyright">
@@ -70,7 +73,7 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className="col-md-6 col-sm-12">
-                            <img className="footer-bottom_payment" src="" alt="payment" />
+                            <img className="footer-bottom_payment" src={payment} alt="payment" />
                         </div>
                     </div>
                 </div>

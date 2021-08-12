@@ -10,7 +10,6 @@ import fp2 from '../assets/images/featureproduct2.jpg';
 import fp3 from '../assets/images/featureproduct3.jpg';
 import fp4 from '../assets/images/featureproduct4.jpg';
 
-
 export const slides = [bg1, bg2];
 
 export const collectionItem = [
