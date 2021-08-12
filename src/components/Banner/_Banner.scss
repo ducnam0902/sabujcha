@@ -1,0 +1,55 @@
+.banner {
+    max-width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .banner-header {
+        padding-top: 145px;
+        padding-bottom: 155px;
+        .banner-title {
+            position: absolute;
+            font-family: $font-montserrat;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 36px;
+            font-weight: 600;
+            left: 50%;
+            top:40%;
+            transform: translateX(-50%) translateY(-60%);
+            margin-bottom: 8px;
+
+        }
+        .banner-breadcrumb {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            .banner-link {
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 500;
+                font-family: $font-lora;
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+            
+            .banner-current-link {
+                color: #fff;
+                font-size: 14px;
+                font-weight: 500;
+                font-family: $font-lora;
+            }
+        }
+    }
+}
+@media screen and(max-width: 767px) {
+    .banner{
+        .banner-header{
+            .banner-title{
+                font-size: 23px;
+            }
+        }
+    }
+}

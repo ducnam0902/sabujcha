@@ -10,7 +10,7 @@ const Collection: FC<CollectionProps> = () => {
         <div className="container-fluid">
             <div className="collection">
                 <div className="row">
-                    {collectionItem.map((value, key) => (<CollectionList key={key} title={value.title} image={value.image} />))}
+                    {collectionItem.map((value, key) => (<CollectionList key={key} title={value.title} image={value.image} slug={value.slug} />))}
                 </div>
             </div>
         </div>

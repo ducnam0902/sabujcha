@@ -15,16 +15,19 @@ export const slides = [bg1, bg2];
 export const collectionItem = [
     {
         image: blacktea,
-        title: 'Black tea'
+        title: 'Black tea',
+        slug: 'black-tea'
     }
     ,
     {
         image: mixtea,
-        title: 'Mix tea'
+        title: 'Mix tea',
+        slug: 'mix-tea'
     },
     {
         image: lovetea,
-        title: 'Love tea'
+        title: 'Love tea',
+        slug: 'love-tea'
     }
 ];
 export const featureProduct = [

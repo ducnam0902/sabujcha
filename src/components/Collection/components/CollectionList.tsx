@@ -1,14 +1,15 @@
-import React, {FC} from 'react'
+import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
-type CollectionListProps ={
+type CollectionListProps = {
     image?: any,
-    title?: string
+    title?: string,
+    slug?: string
 }
-const CollectionList: FC<CollectionListProps> = ({image, title}) => {
+const CollectionList: FC<CollectionListProps> = ({ image, title, slug }) => {
     return (
         <div className="col-md-4">
             <div className="collection-item">
-                <Link to="/" className="collection-item_link">
+                <Link to={`/categories?name=${title}`} className="collection-item_link">
                     <div className="collection-item_image" style={{ backgroundImage: `url(${image})` }}>
                         <div className="collection-item_label">{title}</div>
                     </div>

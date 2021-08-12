@@ -4,6 +4,7 @@ import './App.scss';
 import Homepage from './views/Home/Homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import Categories from './views/Categories/Categories';
 const loading = () => <div>Loading</div>
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
      <React.Suspense fallback={loading()}>
        <Switch>
          <Route exact path="/" render={props => <Homepage/>}/>
+         <Route exact path="/categories" render={props => <Categories/>}/>
+
        </Switch>
      </React.Suspense>
    </Router>
