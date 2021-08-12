@@ -1,4 +1,7 @@
 @import "../../scss/variables";
+@import './components/CartHeader';
+@import './components/currency';
+
 header {
     max-height: 105px;
     background-color: $primary-color;
@@ -18,6 +21,7 @@ header {
             .main-nav_item {
                 display: flex;
                 margin-right: 45px;
+                position: relative;
 
                 .main-nav_item--link {
                     text-transform: uppercase;
@@ -37,64 +41,56 @@ header {
                 &:hover .main-nav_item--link {
                     color: $secondary-color;
                 }
+                &:hover .sub-nav{
+                    @include navWhenHover;
+                }
+                .sub-nav{
+                    @include navBeforeHover;
+                    max-width: 190px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    z-index: 2;
+                    background-color: #fff;
+                    padding-left: 0;
+                    padding-top: 20px;
+                    padding-bottom: 22px;
+                    box-shadow: 1px 2px 5px 0 #0000001a;
+                }
+                .sub-nav_item{
+                    width: 190px;
+                    height: 30px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .sub-nav_item-link{
+                   color: #000;
+                   display: block;
+                   font-family: $font-montserrat;
+                   font-size: 12px;
+                   font-weight: 400;
+                   line-height: 30px;
+                   text-align: left;
+                   text-transform: capitalize;
+
+                   &:hover{
+                       color: $secondary-color;
+                   }
+                }
+
             }
             .main-nav_item:last-child {
                 margin-right: 0;
             }
         }
-        .header-currency {
-            height: 105px;
-            cursor: pointer;
-            padding-left: 62px;
-            padding-right: 10px;
-            display: flex;
-            position: relative;
-            span {
-                font-family: $font-montserrat;
-                font-size: 12px;
-                font-weight: 600;
-                color: $text-color;
-            }
-            i {
-                font-size: 10px;
-                display: inline-block;
-                margin-left: 8px;
-                font-weight: lighter;
-                line-height: 105px;
-            }
-            &::before {
-                display: block;
-                content: "";
-                width: 1px;
-                height: 16px;
-                border-left: 1px solid $text-color;
-                position: absolute;
-                top: 44%;
-                left: 25%;
-            }
-        }
-        .header-cart {
-            margin-left: 20px;
-            height: 105px;
-            position: relative;
-            cursor: pointer;
-            span {
-                position: absolute;
-                bottom: 16%;
-                text-align: center;
-                font-size: 13px;
-                width: 18px;
-                color: $secondary-color;
-            }
-            i {
-                font-size: 20px;
-                font-weight: 500;
-            }
-        }
     }
 }
-@media screen and (max-width: 1100px) {
-    header .header-nav .main-nav .sub-nav .column{
-        padding-left: 10px;
+@media screen and (max-width: 991px) {
+    header{
+        .header-nav{
+            .main-nav{
+                display: none;
+            }
+        }
     }
 }

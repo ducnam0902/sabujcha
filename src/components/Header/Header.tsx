@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
+import CartHeader from './components/CartHeader'
+import Currency from './components/Currency'
 const Header = () => {
     return (
         <header>
@@ -19,32 +21,30 @@ const Header = () => {
                                     <Link to="/" className="main-nav_item--link">About</Link>
                                 </li>
                                 <li className="main-nav_item">
-                                    <Link to="/" className="main-nav_item--link">Shop</Link>
+                                    <Link to="/" className="main-nav_item--link">Categories</Link>
                                     <i className="fa fa-chevron-down" aria-hidden="true"></i>
-                                    
-                                </li>
-                                <li className="main-nav_item">
-                                    <Link to="/" className="main-nav_item--link">Product</Link>
-                                    <i className="fa fa-chevron-down" aria-hidden="true"></i>
-
+                                    <ul className="sub-nav">
+                                        <li className="sub-nav_item">
+                                            <Link to="/" className="sub-nav_item-link">Black Tea</Link>
+                                        </li>
+                                        <li className="sub-nav_item">
+                                            <Link to="/" className="sub-nav_item-link">Mix Tea</Link>
+                                        </li>
+                                        <li className="sub-nav_item">
+                                            <Link to="/" className="sub-nav_item-link">Love Tea</Link>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className="main-nav_item">
                                     <Link to="/" className="main-nav_item--link">Blog</Link>
-                                    <i className="fa fa-chevron-down" aria-hidden="true"></i>
 
                                 </li>
                                 <li className="main-nav_item">
                                     <Link to="/" className="main-nav_item--link">Contact</Link>
                                 </li>
                             </ul>
-                            <div className="header-currency">
-                                <span>USD</span>
-                                <i className="fa fa-chevron-down" aria-hidden="true"></i>
-                            </div>
-                            <div className="header-cart">
-                                <span>0</span>
-                                <i className="ti ti-shopping-cart"></i>
-                            </div>
+                            <Currency/>
+                            <CartHeader/>
                         </div>
                     </div>
                 </div>
