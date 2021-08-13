@@ -59,6 +59,8 @@
 }
 @media screen and (max-width: 991px) {
     .header-currency{
+        padding-left: 0px;
+        padding-right: 0px;
         &::before{
             display: none;
         }

@@ -167,3 +167,8 @@
     background-color: $secondary-color;
     outline: 1px solid $secondary-color;
 }
+@media screen and(max-width: 991px) {
+    .header-cart{
+        margin-left: 15px;
+    }
+}

@@ -1,16 +1,17 @@
 @import "../../scss/variables";
-@import './components/CartHeader';
-@import './components/currency';
-
+@import "./components/CartHeader";
+@import "./components/currency";
+@import "./components/HeaderMobile";
 header {
-    max-height: 105px;
     background-color: $primary-color;
     .header-logo {
+        max-height: 105px;
         display: inline-block;
         line-height: 105px;
     }
 
     .header-nav {
+        max-height: 105px;
         display: flex;
         line-height: 105px;
         justify-content: flex-end;
@@ -41,10 +42,10 @@ header {
                 &:hover .main-nav_item--link {
                     color: $secondary-color;
                 }
-                &:hover .sub-nav{
+                &:hover .sub-nav {
                     @include navWhenHover;
                 }
-                .sub-nav{
+                .sub-nav {
                     @include navBeforeHover;
                     max-width: 190px;
                     position: absolute;
@@ -57,39 +58,112 @@ header {
                     padding-bottom: 22px;
                     box-shadow: 1px 2px 5px 0 #0000001a;
                 }
-                .sub-nav_item{
+                .sub-nav_item {
                     width: 190px;
                     height: 30px;
                     padding-left: 20px;
                     padding-right: 20px;
                 }
-                .sub-nav_item-link{
-                   color: #000;
-                   display: block;
-                   font-family: $font-montserrat;
-                   font-size: 12px;
-                   font-weight: 400;
-                   line-height: 30px;
-                   text-align: left;
-                   text-transform: capitalize;
+                .sub-nav_item-link {
+                    color: #000;
+                    display: block;
+                    font-family: $font-montserrat;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: left;
+                    text-transform: capitalize;
 
-                   &:hover{
-                       color: $secondary-color;
-                   }
+                    &:hover {
+                        color: $secondary-color;
+                    }
                 }
-
             }
             .main-nav_item:last-child {
                 margin-right: 0;
             }
         }
+        .header-mobile {
+            display: none;
+            .header-mobile-icon {
+                border: 1px solid #333;
+                padding: 5px 6px;
+                width: 18px;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                margin-left: 15px;
+            }
+        }
+    }
+    .mobile-nav {
+        display: none;
     }
 }
 @media screen and (max-width: 991px) {
-    header{
-        .header-nav{
-            .main-nav{
+    header {
+        .header-nav {
+            .main-nav {
                 display: none;
+            }
+
+            .header-mobile {
+                display: block;
+            }
+        }
+        .mobile-nav {
+            display: block;
+            padding-left: 0;
+            max-width: 100%;
+            .mobile-nav_item{
+                background-color: #f8f8f8;
+                border-top: 1px solid #ddd;
+                
+                .mobile-nav_item-link{
+                    display: block;
+                    padding: 12px 34.5px;
+                    font-family: $font-lora;
+                    font-style: normal;
+                    color: #242424;
+                    font-size: 12px;
+                    line-height: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                &:hover .mobile-nav_item-link{
+                    color: $secondary-color;
+                }
+                .mobile-nav_item-icon{
+                    font-size: 12px;
+                    color: #242424;
+                    line-height: 36px;
+                    margin-right: 20px;
+                }
+                .mobile-nav_group{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .mobile-sub-nav{
+                    max-width: 100%;
+                    padding-left: 0;
+                    .mobile-sub-nav_item{
+                        background-color: #f8f8f8;
+                        border-top: 1px solid #ddd;
+                        .mobile-sub-nav_item-link{
+                            display: block;
+                            padding: 12px 69px;
+                            font-family: $font-lora;
+                            font-style: normal;
+                            color: #242424;
+                            font-size: 12px;
+                            line-height: 12px;
+                            font-weight: 500;
+                        }
+                        &:hover .mobile-sub-nav_item-link{
+                            color: $secondary-color;
+                        }
+                    }
+                }
             }
         }
     }
