@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import CartHeader from './components/CartHeader'
 import Currency from './components/Currency'
+import { collectionItem } from '../../constants/images'
 import { useSpring, animated, config } from 'react-spring'
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
         from: {
             opacity: 0,
             height: 0,
-            
+
         },
         to: {
             opacity: openNav ? 1 : 0,
@@ -24,7 +25,7 @@ const Header = () => {
         from: {
             opacity: 0,
             height: 0,
-            
+
         },
         to: {
             opacity: openSubNav ? 1 : 0,
@@ -53,15 +54,12 @@ const Header = () => {
                                     <Link to="/" className="main-nav_item--link">Categories</Link>
                                     <i className="fa fa-chevron-down" aria-hidden="true"></i>
                                     <ul className="sub-nav">
-                                        <li className="sub-nav_item">
-                                            <Link to="/" className="sub-nav_item-link">Black Tea</Link>
-                                        </li>
-                                        <li className="sub-nav_item">
-                                            <Link to="/" className="sub-nav_item-link">Mix Tea</Link>
-                                        </li>
-                                        <li className="sub-nav_item">
-                                            <Link to="/" className="sub-nav_item-link">Love Tea</Link>
-                                        </li>
+
+                                        {collectionItem.map((values, key) => (
+                                            <li key={key} className="sub-nav_item">
+                                                <Link to={`/categories?name=${values.title}`} className="sub-nav_item-link">{values.title}</Link>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </li>
                                 <li className="main-nav_item">
@@ -80,7 +78,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <animated.div style={{...fade, overflowX: 'hidden', overflowY: openSubNav ? 'auto' : 'hidden'}} className="row mobile-layout">
+                <animated.div style={{ ...fade, overflowX: 'hidden', overflowY: openSubNav ? 'auto' : 'hidden' }} className="row mobile-layout">
                     <div className="col-12">
                         <ul className="mobile-nav">
                             <li className="mobile-nav_item">
@@ -95,21 +93,16 @@ const Header = () => {
                                     {openSubNav ? <i className="ti ti-minus mobile-nav_item-icon" aria-hidden="true"></i> : <i className="ti ti-plus mobile-nav_item-icon" aria-hidden="true"></i>}
 
                                 </div>
-                                <animated.ul style={{...fade2,visibility: fade2.opacity.interpolate(o => o===0 ? 'hidden' : 'visible')}} className="mobile-sub-nav">
-                                    <li className="mobile-sub-nav_item">
-                                        <Link to="/" className="mobile-sub-nav_item-link">Black Tea</Link>
-                                    </li>
-                                    <li className="mobile-sub-nav_item">
-                                        <Link to="/" className="mobile-sub-nav_item-link">Mix Tea</Link>
-                                    </li>
-                                    <li className="mobile-sub-nav_item">
-                                        <Link to="/" className="mobile-sub-nav_item-link">Love Tea</Link>
-                                    </li>
+                                <animated.ul style={{ ...fade2, visibility: fade2.opacity.interpolate(o => o === 0 ? 'hidden' : 'visible') }} className="mobile-sub-nav">
+                                    {collectionItem.map((values, key) => (
+                                        <li key={key} className="mobile-sub-nav_item">
+                                            <Link to={`/categories?name=${values.title}`} className="mobile-sub-nav_item-link">{values.title}</Link>
+                                        </li>
+                                    ))}
                                 </animated.ul>
                             </li>
                             <li className="mobile-nav_item">
                                 <Link to="/" className="mobile-nav_item-link">Blog</Link>
-
                             </li>
                             <li className="mobile-nav_item">
                                 <Link to="/" className="mobile-nav_item-link">Contact</Link>
