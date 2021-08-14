@@ -3,9 +3,21 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import CartHeader from './components/CartHeader'
 import Currency from './components/Currency'
-
+import { useSpring, animated, config} from 'react-spring'
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
+    const {opacity, height} = useSpring({
+        from:{
+            opacity: 0,
+            height:0
+        }, 
+        to:{
+           opacity: openNav === true  ? 1 : 0,
+           height:openNav === true  ? 312 :0
+        },
+        config: config.slow
+    })
+   
     return (
         <header>
             <div className="container">
@@ -53,9 +65,12 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <animated.div style={{
+                            opacity: opacity.interpolate(o => o),
+                            height: height.interpolate(h => h)
+                        }} className="row">
                     <div className="col-12">
-                        <ul className="mobile-nav">
+                        <ul   className="mobile-nav">
                             <li className="mobile-nav_item">
                                 <Link to="/" className="mobile-nav_item-link">Home</Link>
                             </li>
@@ -89,7 +104,7 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </animated.div>
             </div>
         </header>
     )
