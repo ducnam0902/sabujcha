@@ -96,6 +96,9 @@ header {
             }
         }
     }
+    .mobile-layout{
+        display: none;
+    }
     .mobile-nav {
         display: none;
     }
@@ -111,7 +114,11 @@ header {
                 display: block;
             }
         }
+        .mobile-layout{
+            display: block;
+        }
         .mobile-nav {
+            margin-bottom: 0;
             display: block;
             padding-left: 0;
             max-width: 100%;

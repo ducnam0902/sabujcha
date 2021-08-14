@@ -3,21 +3,36 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import CartHeader from './components/CartHeader'
 import Currency from './components/Currency'
-import { useSpring, animated, config} from 'react-spring'
+import { useSpring, animated, config } from 'react-spring'
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
-    const {opacity, height} = useSpring({
-        from:{
+    const [openSubNav, setOpenSubNav] = useState(false);
+    const fade = useSpring({
+        from: {
             opacity: 0,
-            height:0
-        }, 
-        to:{
-           opacity: openNav === true  ? 1 : 0,
-           height:openNav === true  ? 312 :0
+            height: 0,
+            
+        },
+        to: {
+            opacity: openNav ? 1 : 0,
+            height: openNav ? 185 : 0,
         },
         config: config.slow
     })
-   
+
+    const fade2 = useSpring({
+        from: {
+            opacity: 0,
+            height: 0,
+            
+        },
+        to: {
+            opacity: openSubNav ? 1 : 0,
+            height: openSubNav ? 106 : 0,
+        },
+        config: config.slow
+    })
+
     return (
         <header>
             <div className="container">
@@ -65,12 +80,9 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <animated.div style={{
-                            opacity: opacity.interpolate(o => o),
-                            height: height.interpolate(h => h)
-                        }} className="row">
+                <animated.div style={{...fade, overflowX: 'hidden', overflowY: openSubNav ? 'auto' : 'hidden'}} className="row mobile-layout">
                     <div className="col-12">
-                        <ul   className="mobile-nav">
+                        <ul className="mobile-nav">
                             <li className="mobile-nav_item">
                                 <Link to="/" className="mobile-nav_item-link">Home</Link>
                             </li>
@@ -78,12 +90,12 @@ const Header = () => {
                                 <Link to="/" className="mobile-nav_item-link">About</Link>
                             </li>
                             <li className="mobile-nav_item">
-                                <div className="mobile-nav_group" >
+                                <div className="mobile-nav_group" onClick={() => setOpenSubNav(!openSubNav)} >
                                     <Link to="/" className="mobile-nav_item-link">Categories</Link>
-                                    <i className="ti ti-plus mobile-nav_item-icon" aria-hidden="true"></i>
-                                    {/* <i className="ti ti-minus mobile-nav_item-icon" aria-hidden="true"></i> */}
+                                    {openSubNav ? <i className="ti ti-minus mobile-nav_item-icon" aria-hidden="true"></i> : <i className="ti ti-plus mobile-nav_item-icon" aria-hidden="true"></i>}
+
                                 </div>
-                                <ul className="mobile-sub-nav">
+                                <animated.ul style={{...fade2,visibility: fade2.opacity.interpolate(o => o===0 ? 'hidden' : 'visible')}} className="mobile-sub-nav">
                                     <li className="mobile-sub-nav_item">
                                         <Link to="/" className="mobile-sub-nav_item-link">Black Tea</Link>
                                     </li>
@@ -93,7 +105,7 @@ const Header = () => {
                                     <li className="mobile-sub-nav_item">
                                         <Link to="/" className="mobile-sub-nav_item-link">Love Tea</Link>
                                     </li>
-                                </ul>
+                                </animated.ul>
                             </li>
                             <li className="mobile-nav_item">
                                 <Link to="/" className="mobile-nav_item-link">Blog</Link>
