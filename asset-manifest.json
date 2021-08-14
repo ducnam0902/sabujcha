@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sabujcha/static/css/main.f8dd94e1.chunk.css",
-    "main.js": "/sabujcha/static/js/main.e3f72f53.chunk.js",
-    "main.js.map": "/sabujcha/static/js/main.e3f72f53.chunk.js.map",
+    "main.css": "/sabujcha/static/css/main.ca55aa03.chunk.css",
+    "main.js": "/sabujcha/static/js/main.f1042e9c.chunk.js",
+    "main.js.map": "/sabujcha/static/js/main.f1042e9c.chunk.js.map",
     "runtime-main.js": "/sabujcha/static/js/runtime-main.0fb32e72.js",
     "runtime-main.js.map": "/sabujcha/static/js/runtime-main.0fb32e72.js.map",
     "static/css/2.ce7eed00.chunk.css": "/sabujcha/static/css/2.ce7eed00.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.5c6752da.chunk.js.map": "/sabujcha/static/js/3.5c6752da.chunk.js.map",
     "index.html": "/sabujcha/index.html",
     "static/css/2.ce7eed00.chunk.css.map": "/sabujcha/static/css/2.ce7eed00.chunk.css.map",
-    "static/css/main.f8dd94e1.chunk.css.map": "/sabujcha/static/css/main.f8dd94e1.chunk.css.map",
+    "static/css/main.ca55aa03.chunk.css.map": "/sabujcha/static/css/main.ca55aa03.chunk.css.map",
     "static/js/2.a53219db.chunk.js.LICENSE.txt": "/sabujcha/static/js/2.a53219db.chunk.js.LICENSE.txt",
     "static/media/bg-product.ce014f33.jpg": "/sabujcha/static/media/bg-product.ce014f33.jpg",
     "static/media/App.scss": "/sabujcha/static/media/bgnews.bc2c8ed4.jpg",
@@ -33,7 +33,7 @@
     "static/js/runtime-main.0fb32e72.js",
     "static/css/2.ce7eed00.chunk.css",
     "static/js/2.a53219db.chunk.js",
-    "static/css/main.f8dd94e1.chunk.css",
-    "static/js/main.e3f72f53.chunk.js"
+    "static/css/main.ca55aa03.chunk.css",
+    "static/js/main.f1042e9c.chunk.js"
   ]
 }
