@@ -1,10 +1,17 @@
-import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { featureProduct } from '../../../constants/featureProduct'
+type featureProductProps = {
+    image?: string,
+    title?: string,
+    oldPrice?: string
+}
 const CartHeader = () => {
+    const [products, setProducts] = useState<Array<featureProductProps>>(featureProduct);
+    const totalItem = products.length ? products.length : 0;
     const renderCartList = () => {
         return (
-            featureProduct.map((values, key) => (
+            products.map((values, key) => (
                 <div key={key} className="cart-item">
                     <div className="cart-item_image">
                         <Link className="cart-item_image_link" to="/">
@@ -17,7 +24,7 @@ const CartHeader = () => {
                         <p className="cart-item_price">{values.oldPrice}</p>
                     </div>
                     <div className="cart-item_remove">
-                    <i className="ti ti-close cart-item_remove-icon" aria-hidden="true"></i>
+                        <i className="ti ti-close cart-item_remove-icon" aria-hidden="true"></i>
                     </div>
                 </div>
             ))
@@ -26,24 +33,30 @@ const CartHeader = () => {
     }
     return (
         <div className="header-cart">
-            <span>0</span>
+            <span>{totalItem}</span>
             <i className="ti ti-shopping-cart"></i>
-            <div className="header-cart-nav">
-                <div className="cart-list">
-                    {renderCartList()}
-                </div>
-                <div className="header-cart_summary">
-                    <div className="header-cart_total-item">
-                        <p className="header-cart_total">Total</p>
-                        <p className="header-cart_price">$35</p>
-                    </div>
-                    <div className="header-cart_function">
-                        <div className="header-cart_viewcart">View Cart</div>
-                        <div className="header-cart_checkout">Checkout</div>
-                    </div>
-                </div>
 
-            </div >
+            {totalItem <= 0 ?
+                <div className="header-cart-nav">
+                    <h3 className="header-cart-empty">Your cart is currently empty.</h3>
+                </div> :
+                <div className="header-cart-nav">
+                    <div className="cart-list">
+                        {renderCartList()}
+                    </div>
+                    <div className="header-cart_summary">
+                        <div className="header-cart_total-item">
+                            <p className="header-cart_total">Total</p>
+                            <p className="header-cart_price">$35</p>
+                        </div>
+                        <div className="header-cart_function">
+                            <div className="header-cart_viewcart">View Cart</div>
+                            <div className="header-cart_checkout">Checkout</div>
+                        </div>
+                    </div>
+
+                </div >}
+
         </div >
     )
 }

@@ -28,6 +28,15 @@
         box-shadow: 0 0 7px 0.5px #00000026;
         padding: 31px 35px 10px;
         width: 340px;
+        
+        .header-cart-empty{
+            font-size: 14px;
+            padding: 25px 0;
+            font-family: $font-playfair;
+            font-weight: 400;
+            color: #242424;
+            line-height: 14px;
+        }
     }
     .cart-list {
         max-width: 100%;
