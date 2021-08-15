@@ -12,8 +12,8 @@ const FilterList: FC<FilterListProps> = ({ title, data }) => {
                 {
                     data.map((values, key) => (
                         <li key={key} className="filter-list_item">
-                            <input type="checkbox" className="filter-list_item_input" name={values.name} value={values.value} defaultChecked={values.tick} />
-                            <label htmlFor="">{values.name}</label>
+                            <input type="checkbox" id={values.name} className="filter-list_item_input" name={values.name} value={values.value} defaultChecked={values.tick} />
+                            <label className="filter-list_label" htmlFor={values.name} >{values.name}</label>
                         </li>
                     ))
                 }

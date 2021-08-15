@@ -5,6 +5,7 @@ import { vendors } from '../../constants/vendors';
 import { sizes } from '../../constants/sizes';
 import { colors } from '../../constants/color';
 import { Link } from 'react-router-dom';
+import greenTeaBenefit from '../../assets/images/green-tea-benefits.jpg';
 const FilterCategory = () => {
 
     return (
@@ -27,8 +28,10 @@ const FilterCategory = () => {
                 </div>
                 <FilterList title="Vendors" data={vendors} />
                 <FilterList title="Color" data={colors} />
-                <FilterList title="Size" data={sizes} />
-
+                <FilterList title="Size" data={sizes} />               
+            </div>
+            <div className="filter-banner">
+                <img className="filter-banner_image" src={greenTeaBenefit} alt="Matcha Tea" />
             </div>
         </div>
     )
