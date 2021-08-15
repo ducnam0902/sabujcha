@@ -1,35 +1,8 @@
-import bg1 from '../assets/images/s42.jpg';
-import bg2 from '../assets/images/s43.jpg';
-
-import blacktea from '../assets/images/razdel.jpg';
-import mixtea from '../assets/images/razdel_05.jpg';
-import lovetea from '../assets/images/razd.jpg';
-
 import fp1 from '../assets/images/featureproduct1.jpg';
 import fp2 from '../assets/images/featureproduct2.jpg';
 import fp3 from '../assets/images/featureproduct3.jpg';
 import fp4 from '../assets/images/featureproduct4.jpg';
 
-export const slides = [bg1, bg2];
-
-export const collectionItem = [
-    {
-        image: blacktea,
-        title: 'Black tea',
-        slug: 'black-tea'
-    }
-    ,
-    {
-        image: mixtea,
-        title: 'Mix tea',
-        slug: 'mix-tea'
-    },
-    {
-        image: lovetea,
-        title: 'Love tea',
-        slug: 'love-tea'
-    }
-];
 export const featureProduct = [
     {
         isSale: true,

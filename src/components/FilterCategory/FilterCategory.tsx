@@ -1,5 +1,5 @@
 import React from 'react';
-import { collectionItem } from '../../constants/images';
+import { collectionItem } from '../../constants/collectionItem';
 import FilterList from './components/FilterList';
 import { vendors } from '../../constants/vendors';
 import { sizes } from '../../constants/sizes';

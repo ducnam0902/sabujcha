@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { collectionItem } from '../../constants/images'
+import { collectionItem } from '../../constants/collectionItem'
 import CollectionList from './components/CollectionList'
 
 type CollectionProps = {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import CartHeader from './components/CartHeader'
 import Currency from './components/Currency'
-import { collectionItem } from '../../constants/images'
+import { collectionItem } from '../../constants/collectionItem'
 import { useSpring, animated, config } from 'react-spring'
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);

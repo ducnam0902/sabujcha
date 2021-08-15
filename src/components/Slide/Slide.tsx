@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { slides } from '../../constants/images';
+import { slides } from '../../constants/slides';
 import { useSpring, animated } from 'react-spring';
 const Slide = () => {
     const [slideSeleted, setSlideSeleted] = useState(slides[0]);

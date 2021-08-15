@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { featureProduct } from '../../../constants/images'
+import { featureProduct } from '../../../constants/featureProduct'
 const CartHeader = () => {
     const renderCartList = () => {
         return (

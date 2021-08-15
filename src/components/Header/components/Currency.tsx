@@ -1,16 +1,19 @@
-import React from 'react'
-const currencyList = ['USD - US Dollar', 'EUR - Euro', 'GBP - British Pound',
-    'INR -  Indian Rupee', 'BDT - Bangladesh Taka', 'JPY- Japan Yen', 'CAD - Canada Dollar',
-    'AUD - Australian Dollar'];
+import React, { useState } from 'react'
+import { currencyList } from '../../../constants/currencyList';
 const Currency = () => {
+    const [listCurrency, ] = useState(currencyList);
+    const [currencySelected, setCurrencySelected] = useState(listCurrency[0]);
+    const changeCurrency = (currency: any) => {
+        setCurrencySelected(currency);
+    }
     const renderList = () => {
         return (
-            currencyList.map((values, key) => <li key={key} className="header-currency_item">{values}</li>)
+            currencyList.map((values, key) => <li key={key} onClick={() => changeCurrency(values)} className="header-currency_item">{`${values.currencyCode} - ${values.currencyName}`}</li>)
         )
     }
     return (
         <div className="header-currency">
-            <span>USD</span>
+            <span>{currencySelected.currencyCode}</span>
             <i className="fa fa-chevron-down" aria-hidden="true"></i>
             <ul className="header-currency_list">
                 {renderList()}

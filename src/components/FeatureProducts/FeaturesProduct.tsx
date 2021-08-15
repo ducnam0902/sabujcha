@@ -1,4 +1,4 @@
-import { featureProduct } from '../../constants/images'
+import { featureProduct } from '../../constants/featureProduct'
 import ProductList from './components/ProductList'
 const FeaturesProduct = () => {
     return (
