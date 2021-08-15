@@ -49,7 +49,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-lg-3">
-                            <div className="footer-item">
+                            <div className="footer-item last-item">
                                 <p className="footer-item_title">Find us</p>
                                 <p className="footer-item_info">Your Description goes to here you can find us here</p>
                                 <div className="footer-item-group">
