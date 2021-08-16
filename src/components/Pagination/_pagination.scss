@@ -1,0 +1,90 @@
+.pagination-wrapper{
+    margin-top: 23px;
+    border: 1px solid #e9e9e9;
+    padding: 15px 24px 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .pagination{
+        .pagination-prev{
+            margin-right: 8px;
+            background-color: #f1f1f1;
+            border-radius: 3px;
+            line-height: 1;
+            padding: 11px 13px;
+            &:hover {
+                background-color: $secondary-color;
+                cursor: pointer;
+                color: #fff;
+                transition: all 0.4s ease-in-out;
+            }
+            .pagination-prev-icon{
+                margin-right: 7px;
+                font-size: 10px;
+            }
+            .pagination-prev-span{
+                font-size: 14px;
+                font-family: $font-lora;
+
+            }
+        }
+        .pagination-item{
+            margin-right: 8px;
+            background-color: #f1f1f1;
+            border-radius: 3px;
+            color: #242424;
+            padding: 11px 13px;
+            line-height: 1;
+            font-size: 14px;
+            font-family: $font-lora;
+            font-weight: 400;
+            &:hover {
+                background-color: $secondary-color;
+                cursor: pointer;
+                color: #fff;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+        .pagination-next{
+            margin-right: 8px;
+            background-color: #f1f1f1;
+            border-radius: 3px;
+            line-height: 1;
+            padding: 11px 13px;
+            &:hover {
+                background-color: $secondary-color;
+                cursor: pointer;
+                color: #fff;
+                transition: all 0.4s ease-in-out;
+            }
+            .pagination-next-span{
+                font-size: 14px;
+                font-family: $font-lora;
+                margin-right: 7px;
+            }
+            .pagination-next-icon{
+                font-size: 10px;
+            }
+        }
+    }
+    .pagination-info{
+        margin-bottom: 0;
+        font-family: $font-lora;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #242424;
+    }
+    .disabled{
+        cursor: not-allowed !important;
+    }
+    .active{
+        background-color: $secondary-color !important;
+        color: #fff !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .pagination-wrapper{
+        flex-wrap: wrap;
+    }
+}

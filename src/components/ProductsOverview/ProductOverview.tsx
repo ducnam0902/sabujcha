@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ProductList from '../FeatureProducts/components/ProductList'
 import { featureProduct } from '../../constants/products'
+import Pagination from '../Pagination/Pagination';
 const ProductOverview = () => {
     const [products, setProducts] = useState(featureProduct.slice(0,9));
     return (
@@ -38,11 +39,9 @@ const ProductOverview = () => {
                             <ProductList data={values}/>
                         </div>
                     ))}
-
-
                 </div>
             </div>
-
+         <Pagination/>   
         </div>
     )
 }
