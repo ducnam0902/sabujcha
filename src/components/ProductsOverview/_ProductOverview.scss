@@ -1,0 +1,85 @@
+.product-overview {
+    max-width: 100%;
+
+    .shop-topbar-wrapper {
+        border: 1px solid #e9e9e9;
+        margin-bottom: 30px;
+        padding: 15px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .change-view-wrapper {
+            display: flex;
+            .change-view-icon-group {
+                margin-right: 33px;
+                display: flex;
+                .change-view-icon {
+                    font-size: 20px;
+                    margin-right: 10px;
+                    padding: 10px 8px;
+
+                    &:hover {
+                        color: $secondary-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .total-result {
+                margin-top: 8px;
+                font-family: $font-lora;
+                font-weight: 400;
+                font-size: 14px;
+                color: #242424;
+            }
+        }
+        .product-sorting-wrapper {
+            display: flex;
+            .sorting-title {
+                padding: 0 6px 1px;
+                font-size: 15px;
+                font-weight: 400;
+                color: #242424;
+                cursor: pointer;
+                font-family: $font-lora;
+                margin-right: 12px;
+            }
+            .product-sorting-select {
+                background-color: #fff;
+                padding: 0 6px 1px;
+                border: 1px solid #ebebeb;
+                outline: none;
+                border-radius: 3px;
+                color: #242424;
+                cursor: pointer;
+                font-size: 14px;
+                height: 30px;
+                width: 210px;
+                font-family: $font-lora;
+                font-weight: 400;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .product-overview {
+        .shop-topbar-wrapper {
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .product-overview {
+        .shop-topbar-wrapper {
+            flex-wrap: wrap;
+            .change-view-wrapper {
+                flex-wrap: wrap;
+            }
+            .product-sorting-wrapper {
+                .product-sorting-select {
+                    width: 160px;
+                }
+            }
+        }
+    }
+}

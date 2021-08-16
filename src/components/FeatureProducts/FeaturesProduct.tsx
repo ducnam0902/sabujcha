@@ -6,7 +6,9 @@ const FeaturesProduct = () => {
             <div className="container">
                 <div className="row">
                     {featureProduct.map((values, key) => (
-                        <ProductList key={key} data={values}/>
+                         <div key={key} className=" col-lg-3 col-md-6 col-sm-12">
+                        <ProductList  data={values}/>
+                        </div>
                     ))}
                 </div>
             </div>

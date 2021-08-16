@@ -43,6 +43,23 @@
             font-weight: 400;
             font-family: $font-lora;
         }
+        .feature-product-soldout {
+            position: absolute;
+            top: 10px;
+            left: 9px;
+            width: auto;
+            padding: 0px 15px;
+
+            background-color: red;
+
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            height: 21px;
+            line-height: 22px;
+            font-weight: 400;
+            font-family: $font-lora;
+        }
         .feature-product-function {
             position: absolute;
             bottom: 15px;
@@ -141,6 +158,18 @@
                 &:hover {
                     color: $secondary-color;
                     cursor: pointer;
+                }
+            }
+            .feature-product-sold-out{
+                padding-top: 6px;
+                font-family: $font-work-sans;
+                font-size: 16px;
+                font-weight: 500;
+                color: #6d6d6d;
+                text-transform: uppercase;
+                &:hover {
+                    color: $secondary-color;
+                    cursor: not-allowed;
                 }
             }
         }

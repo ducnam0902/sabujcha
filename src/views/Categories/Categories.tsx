@@ -2,6 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom';
 import Banner from '../../components/Banner/Banner';
 import FilterCategory from '../../components/FilterCategory/FilterCategory';
+import ProductOverview from '../../components/ProductsOverview/ProductOverview';
 import DefaultLayout from '../../layouts/DefaultLayout'
 function useQuery() {
     return new URLSearchParams(useLocation().search);
@@ -19,7 +20,7 @@ const Categories = () => {
                             <FilterCategory/>
                         </div>
                         <div className="col-lg-9 col-md-12">
-
+                            <ProductOverview/>
                         </div>
                     </div>
                 </div>
