@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sabujcha/static/css/main.043eb31d.chunk.css",
-    "main.js": "/sabujcha/static/js/main.7eefa293.chunk.js",
-    "main.js.map": "/sabujcha/static/js/main.7eefa293.chunk.js.map",
+    "main.css": "/sabujcha/static/css/main.dd4666c9.chunk.css",
+    "main.js": "/sabujcha/static/js/main.66537802.chunk.js",
+    "main.js.map": "/sabujcha/static/js/main.66537802.chunk.js.map",
     "runtime-main.js": "/sabujcha/static/js/runtime-main.0fb32e72.js",
     "runtime-main.js.map": "/sabujcha/static/js/runtime-main.0fb32e72.js.map",
     "static/css/2.ce7eed00.chunk.css": "/sabujcha/static/css/2.ce7eed00.chunk.css",
@@ -12,12 +12,16 @@
     "static/js/3.5c6752da.chunk.js.map": "/sabujcha/static/js/3.5c6752da.chunk.js.map",
     "index.html": "/sabujcha/index.html",
     "static/css/2.ce7eed00.chunk.css.map": "/sabujcha/static/css/2.ce7eed00.chunk.css.map",
-    "static/css/main.043eb31d.chunk.css.map": "/sabujcha/static/css/main.043eb31d.chunk.css.map",
+    "static/css/main.dd4666c9.chunk.css.map": "/sabujcha/static/css/main.dd4666c9.chunk.css.map",
     "static/js/2.14a37daa.chunk.js.LICENSE.txt": "/sabujcha/static/js/2.14a37daa.chunk.js.LICENSE.txt",
     "static/media/bg-product.ce014f33.jpg": "/sabujcha/static/media/bg-product.ce014f33.jpg",
     "static/media/App.scss": "/sabujcha/static/media/bgnews.bc2c8ed4.jpg",
     "static/media/featureproduct1.b658f7e0.jpg": "/sabujcha/static/media/featureproduct1.b658f7e0.jpg",
+    "static/media/featureproduct11.8c2a9559.jpg": "/sabujcha/static/media/featureproduct11.8c2a9559.jpg",
+    "static/media/featureproduct12.f1a134bd.jpg": "/sabujcha/static/media/featureproduct12.f1a134bd.jpg",
+    "static/media/featureproduct14.7dc0422b.jpg": "/sabujcha/static/media/featureproduct14.7dc0422b.jpg",
     "static/media/featureproduct3.2897b134.jpg": "/sabujcha/static/media/featureproduct3.2897b134.jpg",
+    "static/media/featureproduct7.50eba375.jpg": "/sabujcha/static/media/featureproduct7.50eba375.jpg",
     "static/media/font-awesome.min.css": "/sabujcha/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/green-tea-benefits.d9e8da62.jpg": "/sabujcha/static/media/green-tea-benefits.d9e8da62.jpg",
     "static/media/new1.29d1a1d5.jpg": "/sabujcha/static/media/new1.29d1a1d5.jpg",
@@ -34,7 +38,7 @@
     "static/js/runtime-main.0fb32e72.js",
     "static/css/2.ce7eed00.chunk.css",
     "static/js/2.14a37daa.chunk.js",
-    "static/css/main.043eb31d.chunk.css",
-    "static/js/main.7eefa293.chunk.js"
+    "static/css/main.dd4666c9.chunk.css",
+    "static/js/main.66537802.chunk.js"
   ]
 }
