@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { featureProduct } from '../../../constants/featureProduct'
+import { featureProduct } from '../../../constants/products'
 type featureProductProps = {
     image?: string,
     title?: string,
