@@ -8,7 +8,7 @@ const ProductList: FC<ProductListProps> = ({ data }) => {
     return (
 
         <div className="feature-product-item">
-            <Link to="/">
+            <Link to={`/products?product=${title}`}>
                 <div className="feature-product-image" style={{ backgroundImage: `url(${image})` }}>
                     {isSale && <div className="feature-product-sale">Sale</div>}
                     {isSoldout && <div className="feature-product-soldout">Sold out</div>}
@@ -23,7 +23,7 @@ const ProductList: FC<ProductListProps> = ({ data }) => {
                 </div>
             </Link>
             <div className="feature-product-info">
-                <Link className="feature-product-name" to="/">{title.length > 25 ? `${title.slice(0, 25)}...` : title}</Link>
+                <Link className="feature-product-name" to={`/products?product=${title}`}>{title.length > 25 ? `${title.slice(0, 25)}...` : title}</Link>
                 <p className="feature-product-price">
                     <span className="feature-product-new-price">{newPrice} </span>
                     {oldPrice && <span>

@@ -14,12 +14,12 @@ const CartHeader = () => {
             products.map((values, key) => (
                 <div key={key} className="cart-item">
                     <div className="cart-item_image">
-                        <Link className="cart-item_image_link" to="/">
+                        <Link className="cart-item_image_link" to={`/products?product=${values.title}`}>
                             <img className="img-fluid cart-item-image-img" src={values.image} alt={values.title}></img>
                         </Link>
                     </div>
                     <div className="cart-item_info">
-                        <Link to="/" className="cart-item_title">{values.title}</Link>
+                        <Link to={`/products?product=${values.title}`} className="cart-item_title">{values.title}</Link>
                         <p className="cart-item_quantity">Qty: {10}</p>
                         <p className="cart-item_price">{values.oldPrice}</p>
                     </div>

@@ -32,7 +32,6 @@ const Slide = () => {
         }
         setButtonTransition(false);
     }
-    console.log(buttonTransition)
     return (
         <div className="slide-wrapper">
             {slides.map((values, key) => {

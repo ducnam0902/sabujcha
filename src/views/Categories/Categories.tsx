@@ -1,14 +1,12 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom';
 import Banner from '../../components/Banner/Banner';
 import FilterCategory from '../../components/FilterCategory/FilterCategory';
 import ProductOverview from '../../components/ProductsOverview/ProductOverview';
-import DefaultLayout from '../../layouts/DefaultLayout'
-function useQuery() {
-    return new URLSearchParams(useLocation().search);
-}
+import DefaultLayout from '../../layouts/DefaultLayout';
+import { otherServices } from '../../services/otherServices';
+
 const Categories = () => {
-    let query = useQuery();
+    let query = otherServices.useQuery();
     const name = query.get('name');
     return (
         <DefaultLayout>
